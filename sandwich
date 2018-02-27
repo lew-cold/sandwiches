@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
-require_relative '../ruby/methods/make-sandwich'
-puts make_sandwich type: 'beef', number_of_sandwiches: 1
+require_relative './sandwich'
+puts Sandwich.build type: ARGV[0], number_of_sandwiches: ARGV[1]
+
+# you can set arguments on the command line by indexing ARGV
